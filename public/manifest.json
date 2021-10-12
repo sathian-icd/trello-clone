@@ -1,0 +1,15 @@
+{
+  "short_name": "Trello",
+  "name": "Trello clone",
+  "icons": [
+    {
+      "src": "trello.png",
+      "sizes": "126x126 64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#008FE4",
+  "background_color": "#007AC0"
+}
