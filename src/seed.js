@@ -6,7 +6,7 @@ export default function seed(store) {
 
   store.dispatch({
     type: "ADD_LIST",
-    payload: { listId: firstListId, listTitle: "First list" }
+    payload: { listId: firstListId, listTitle: "To do" }
   });
 
   store.dispatch({
@@ -14,7 +14,7 @@ export default function seed(store) {
     payload: {
       listId: firstListId,
       cardId: shortid.generate(),
-      cardText: "First card"
+      cardText: "Backend"
     }
   });
 
@@ -23,7 +23,25 @@ export default function seed(store) {
     payload: {
       listId: firstListId,
       cardId: shortid.generate(),
-      cardText: "Second card"
+      cardText: "Advanced UI/UX"
+    }
+  });
+
+  store.dispatch({
+    type: "ADD_CARD",
+    payload: {
+      listId: firstListId,
+      cardId: shortid.generate(),
+      cardText: "Testing"
+    }
+  });
+
+  store.dispatch({
+    type: "ADD_CARD",
+    payload: {
+      listId: firstListId,
+      cardId: shortid.generate(),
+      cardText: "Hosting"
     }
   });
 
@@ -32,7 +50,7 @@ export default function seed(store) {
 
   store.dispatch({
     type: "ADD_LIST",
-    payload: { listId: secondListId, listTitle: "Second list" }
+    payload: { listId: secondListId, listTitle: "Doing" }
   });
 
   store.dispatch({
@@ -40,7 +58,7 @@ export default function seed(store) {
     payload: {
       listId: secondListId,
       cardId: shortid.generate(),
-      cardText: "Card 1"
+      cardText: "Working UI/UX"
     }
   });
 
@@ -49,7 +67,33 @@ export default function seed(store) {
     payload: {
       listId: secondListId,
       cardId: shortid.generate(),
-      cardText: "Card 2"
+      cardText: "Shifting b/w Boards"
+    }
+  });
+
+  console.log("Insert third list");
+  const thirdListId = shortid.generate();
+
+  store.dispatch({
+    type: "ADD_LIST",
+    payload: { listId: thirdListId, listTitle: "Done" }
+  });
+
+  store.dispatch({
+    type: "ADD_CARD",
+    payload: {
+      listId: thirdListId,
+      cardId: shortid.generate(),
+      cardText: "Repo creating"
+    }
+  });
+
+  store.dispatch({
+    type: "ADD_CARD",
+    payload: {
+      listId: thirdListId,
+      cardId: shortid.generate(),
+      cardText: "lists and cards funcs"
     }
   });
 };
