@@ -4,7 +4,8 @@
   width: 272px;
   height: fit-content;
   margin: 10px;
-  margin-right: 0;
+  opacity: 1;
+  margin-right: 3px;
   border-radius: 5px;
   border: 0px solid rgba(0, 0, 0, 0.12);
 }
@@ -32,15 +33,15 @@
   border-radius: 0 0 10px 10px;
   display: flex;
   font-style: normal;
+  font-weight: bold;
   text-decoration: none;
   align-items: center;
 }
 
 .Toggle-Add-Card:hover {
-  background-color: rgba(9, 45, 66, 0.13);
   color: #17394d;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .Toggle-Add-Card ion-icon {
