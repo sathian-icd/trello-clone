@@ -93,7 +93,7 @@ export default function seed(store) {
     payload: {
       listId: thirdListId,
       cardId: shortid.generate(),
-      cardText: "lists and cards funcs"
+      cardText: "lists and cards func"
     }
   });
 };
